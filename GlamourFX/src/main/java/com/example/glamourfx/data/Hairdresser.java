@@ -1,8 +1,7 @@
 package com.example.glamourfx.data;
 
 public class Hairdresser extends Person {
-
-    double stars;
+    private double stars;
 
     public Hairdresser(String name,double stars)
     {
@@ -21,9 +20,8 @@ public class Hairdresser extends Person {
     }
 
     @Override
-    public String toString()
-    {
-        return name + " " + stars + " stars";
+    public String toString() {
+        return super.toString() + ", " + stars;
     }
 
 }

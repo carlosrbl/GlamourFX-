@@ -14,6 +14,7 @@ public class Main extends Application {
         primaryStage.setTitle("GlamourFX");
         primaryStage.setScene(new Scene(root));
         primaryStage.setFullScreen(true);
+        primaryStage.setFullScreenExitHint("");
         primaryStage.show();
     }
 
