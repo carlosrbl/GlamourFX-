@@ -21,6 +21,7 @@ public class Scene1Controller {
 
             // Obtener la información de la ventana actual
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setTitle("GlamourFX");
             stage.setScene(scene);
             stage.setFullScreen(true);
             stage.show();
