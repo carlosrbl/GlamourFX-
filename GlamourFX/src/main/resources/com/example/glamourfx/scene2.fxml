@@ -3,6 +3,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.glamourfx.Scene2Controller">
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.glamourfx.controllers.Scene2Controller">
     <Label text="Estás en la Scene 2"/>
 </VBox>

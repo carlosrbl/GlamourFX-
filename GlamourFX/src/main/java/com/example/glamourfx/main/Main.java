@@ -1,4 +1,4 @@
-package com.example.glamourfx;
+package com.example.glamourfx.main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/glamourfx/scene1.fxml"));
-        primaryStage.setTitle("JavaFX FXML Example");
+        primaryStage.setTitle("GlamourFX");
         primaryStage.setScene(new Scene(root));
         primaryStage.setFullScreen(true);
         primaryStage.show();
