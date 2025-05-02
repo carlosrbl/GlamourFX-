@@ -1,7 +1,7 @@
 package com.example.glamourfx.data;
 
 public abstract class User extends Person {
-    private String password;
+    protected String password;
 
     public User(String name, String password) {
         super(name);

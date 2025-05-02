@@ -2,7 +2,7 @@ package com.example.glamourfx.data;
 
 public abstract class Person
 {
-    private String name;
+    protected String name;
 
     public Person(String name)
     {
