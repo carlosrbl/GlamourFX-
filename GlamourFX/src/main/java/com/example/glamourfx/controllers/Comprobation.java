@@ -10,16 +10,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Scene1Controller {
+public class Comprobation {
 
     @FXML
-    private void handleButtonAction(ActionEvent event) {
+    private void checkUser()
+    {
+
+    }
+
+    @FXML
+    private void loadRegisterInterface(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/glamourfx/scene2.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/glamourfx/register.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
 
-            // Obtener la información de la ventana actual
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setTitle("GlamourFX");
             stage.setScene(scene);

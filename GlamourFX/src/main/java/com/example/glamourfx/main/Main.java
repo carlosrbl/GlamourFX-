@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/example/glamourfx/scene1.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/glamourfx/welcome.fxml"));
         primaryStage.setTitle("GlamourFX");
         primaryStage.setScene(new Scene(root));
         primaryStage.setFullScreen(true);
