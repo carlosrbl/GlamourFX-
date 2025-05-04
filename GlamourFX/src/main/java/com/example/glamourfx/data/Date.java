@@ -83,6 +83,7 @@ public class Date {
 
     @Override
     public String toString() {
+        //cambiar tostring
         return "Date{" +
                 "name='" + name + '\'' +
                 ", time=" + time +

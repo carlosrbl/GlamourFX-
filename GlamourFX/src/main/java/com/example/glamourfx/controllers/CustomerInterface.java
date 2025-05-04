@@ -10,18 +10,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Comprobation {
+public class CustomerInterface {
 
     @FXML
-    private void checkUser()
-    {
-
-    }
-
-    @FXML
-    private void loadRegisterInterface(ActionEvent event) {
+    private void logOut(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/glamourfx/register.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/glamourfx/welcome.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
 
