@@ -2,9 +2,10 @@ package com.example.glamourfx.data;
 
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.List;
 
-public class Date {
+public class Appointment {
     private String name;
     private LocalDateTime time;
     private Customer customer;
@@ -13,8 +14,8 @@ public class Date {
     private double totalPrice;
     private int totalDuration;
 
-    public Date(String name, LocalDateTime time, Customer customer,
-               Hairdresser hairdresser, List<Service> services, double totalPrice, int totalDuration) {
+    public Appointment(String name, LocalDateTime time, Customer customer,
+                       Hairdresser hairdresser, List<Service> services, double totalPrice, int totalDuration) {
         this.name = name;
         this.time = time;
         this.customer = customer;
@@ -24,6 +25,15 @@ public class Date {
         this.totalDuration = totalDuration;
     }
 
+    private String showServices()
+    {
+        String[] listServices = new String[services.size()];
+        for (int i = 0; i < listServices.length; i++)
+        {
+            listServices[i] = services.get(i).getName();
+        }
+        return Arrays.toString(listServices);
+    }
 
     public String getName() {
         return name;
@@ -83,15 +93,6 @@ public class Date {
 
     @Override
     public String toString() {
-        //cambiar tostring
-        return "Date{" +
-                "name='" + name + '\'' +
-                ", time=" + time +
-                ", customer=" + customer +
-                ", hairdresser=" + hairdresser +
-                ", services=" + services +
-                ", totalPrice=" + totalPrice +
-                ", totalDuration=" + totalDuration +
-                '}';
+        return name + ", " + time + ", " + customer + ", " + hairdresser + ", Services: " + showServices() + ", " + totalPrice + " €, " + totalDuration + " min";
     }
 }

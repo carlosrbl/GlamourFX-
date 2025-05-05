@@ -21,7 +21,7 @@ public class Hairdresser extends Person {
 
     @Override
     public String toString() {
-        return super.toString() + ", " + stars;
+        return super.toString() + ", " + stars + " ✮";
     }
 
 }

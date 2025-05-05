@@ -13,7 +13,7 @@ public class Customer extends User {
     }
 
     public String toString() {
-        return super.toString() + ", " + password2 + ", " + email + ", " + phoneNumber;
+        return super.toString() + ", " + email + ", " + phoneNumber;
     }
 
     public String getPassword2() {

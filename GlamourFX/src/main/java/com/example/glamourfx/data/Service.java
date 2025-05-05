@@ -37,10 +37,6 @@ public class Service {
 
     @Override
     public String toString() {
-        return "Service{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", duration=" + duration +
-                '}';
+        return name + ", " + price + " €, " + duration + " min";
     }
 }
