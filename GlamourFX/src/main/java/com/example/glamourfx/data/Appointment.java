@@ -2,6 +2,7 @@ package com.example.glamourfx.data;
 
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
 
@@ -93,6 +94,7 @@ public class Appointment {
 
     @Override
     public String toString() {
-        return name + ", " + time + ", " + customer + ", " + hairdresser + ", Services: " + showServices() + ", " + totalPrice + " €, " + totalDuration + " min";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+        return name + ", Fecha y hora: " + time.format(formatter) + ", " + customer.getName() + ", " + hairdresser.getName() + ", Services: " + showServices() + ", " + totalPrice + " €, " + totalDuration + " min";
     }
 }

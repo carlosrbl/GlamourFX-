@@ -1,27 +1,34 @@
 package com.example.glamourfx.data;
 
 public class Hairdresser extends Person {
-    private double stars;
+    private int stars;
 
-    public Hairdresser(String name,double stars)
+    public Hairdresser(String name,int stars)
     {
         super(name);
-        this.stars = stars;
+        if (stars > 5 || stars < 0)
+        {
+            this.stars = 1;
+        }
+        else {
+            this.stars = stars;
+        }
     }
 
-    public double getStars()
+    public int getStars()
     {
         return stars;
     }
 
-    public void setStars(double stars)
+    public void setStars(int stars)
     {
         this.stars = stars;
     }
 
     @Override
     public String toString() {
-        return super.toString() + ", " + stars + " ✮";
+        String sts = "✮".repeat(stars);
+        return super.toString() + ", " + stars + " " + sts;
     }
 
 }
