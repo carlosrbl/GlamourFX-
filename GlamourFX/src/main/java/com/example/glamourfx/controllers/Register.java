@@ -28,6 +28,10 @@ public class Register {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setTitle("GlamourFX");
             stage.setScene(scene);
+
+            stage.setFullScreen(true);
+            stage.setFullScreenExitHint("");
+
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
