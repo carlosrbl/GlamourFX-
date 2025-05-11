@@ -18,7 +18,7 @@
             <font>
                 <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
             </font></Button>
-        <Label fx:id="helloLabel" layoutX="1078.0" layoutY="95.0" prefHeight="143.0" prefWidth="431.0" text="Hello, [Nombre]" textFill="WHITE">
+        <Label fx:id="helloLabel" layoutX="1078.0" layoutY="95.0" prefHeight="143.0" prefWidth="431.0" textFill="WHITE">
          <font>
             <Font name="Tw Cen MT Condensed Extra Bold" size="50.0" />
          </font></Label>
