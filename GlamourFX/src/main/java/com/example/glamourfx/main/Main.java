@@ -29,14 +29,13 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
-        launch(args);
+    public static void main(String[] args) {launch(args);
         /*
         Service s1 = new Service("a",42.5,5);
         Service s2 = new Service("b",42.5,5);
         List<Service> services = List.of(s1,s2);
         Hairdresser h = new Hairdresser("h",3);
-        Customer c = new Customer("a","a","a","a","a");
+        Customer c = new Customer("a","a","a","a");
         System.out.println(h);
 
         Appointment a = new Appointment("cita1", LocalDateTime.now(),c,h,services,20.0,15);

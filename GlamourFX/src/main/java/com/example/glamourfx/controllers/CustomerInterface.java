@@ -6,11 +6,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class CustomerInterface {
+
+    @FXML
+    private Label helloLabel;
 
     @FXML
     private void logOut(ActionEvent event) {
@@ -30,5 +34,9 @@ public class CustomerInterface {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void setClienteName(String nombre) {
+        helloLabel.setText("Hello, " + nombre + "!");
     }
 }
