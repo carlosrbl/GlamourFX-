@@ -13,43 +13,56 @@
     <children>
         <ImageView fitHeight="1080.0" fitWidth="1920.0" preserveRatio="false">
             <image>
-                <Image url="@../img/register.png" />
+                <Image url="@../img/hairdresser.png" />
             </image>
         </ImageView>
-        <Button layoutX="1657.0" layoutY="41.0" onAction="#cancel" prefHeight="66.0" prefWidth="212.0" text="Back">
+        <Button layoutX="1643.0" layoutY="39.0" onAction="#cancel" prefHeight="66.0" prefWidth="212.0" text="Back">
             <font>
-                <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
+                <Font size="48.0" />
             </font></Button>
-        <Button layoutX="1741.0" layoutY="454.0" onAction="#addUser" text="Delete">
+        <Label layoutX="1159.0" layoutY="340.0" prefHeight="70.0" prefWidth="136.0" text="Name" textFill="WHITE">
             <font>
-                <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
-            </font></Button>
-        <Label layoutX="1591.0" layoutY="153.0" prefHeight="42.0" prefWidth="90.0" text="NAME" textFill="WHITE">
-            <font>
-                <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
+                <Font size="48.0" />
             </font></Label>
-        <TextField layoutX="1584.0" layoutY="198.0" prefHeight="25.0" prefWidth="314.0" />
-        <Label layoutX="1591.0" layoutY="244.0" prefHeight="42.0" prefWidth="168.0" text="Age" textFill="WHITE">
+        <TextField layoutX="1057.0" layoutY="424.0" prefHeight="25.0" prefWidth="314.0">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+        <ListView layoutX="358.0" layoutY="410.0" prefHeight="546.0" prefWidth="499.0" />
+        <Label layoutX="75.0" layoutY="33.0" prefHeight="70.0" prefWidth="533.0" text="Hairdressers Data" textFill="WHITE">
             <font>
-                <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
-            </font></Label>
-        <TextField layoutX="1584.0" layoutY="296.0" prefHeight="25.0" prefWidth="314.0" />
-        <Label layoutX="1583.0" layoutY="334.0" prefHeight="42.0" prefWidth="275.0" text="Stars" textFill="WHITE">
-            <font>
-                <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
+                <Font size="64.0" />
             </font>
         </Label>
-        <TextField layoutX="1584.0" layoutY="386.0" prefHeight="25.0" prefWidth="314.0" />
-        <Button layoutX="1583.0" layoutY="454.0" onAction="#addUser" text="Update">
-            <font>
-                <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
-            </font>
-        </Button>
-        <ListView layoutX="1165.0" layoutY="137.0" prefHeight="368.0" prefWidth="367.0" />
-        <Label layoutX="1173.0" layoutY="52.0" prefHeight="45.0" prefWidth="367.0" text="Hairdressers Data" textFill="WHITE">
-            <font>
-                <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
-            </font>
-        </Label>
+      <Button layoutX="1114.0" layoutY="800.0" onAction="#cancel" prefHeight="102.0" prefWidth="288.0" text="UPDATE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Button layoutX="1433.0" layoutY="799.0" onAction="#cancel" prefHeight="102.0" prefWidth="288.0" text="CANCEL">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <TextField layoutX="1444.0" layoutY="420.0" prefHeight="25.0" prefWidth="314.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="1545.0" layoutY="329.0" prefHeight="70.0" prefWidth="112.0" text="Stars" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1255.0" layoutY="589.0" prefHeight="25.0" prefWidth="314.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="1353.0" layoutY="507.0" prefHeight="70.0" prefWidth="109.0" text="Price" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
     </children>
 </Pane>
